@@ -1,15 +1,16 @@
-# AI Stock Analyzer
+# AI 股票分析面板
 
-An AI-powered stock analysis panel built with FastAPI, Vue 3, DeepSeek AI, and Supabase.
+基于 FastAPI、Vue 3、DeepSeek AI 和 Supabase 构建的 AI 股票分析面板。
 
-## Features
+## 功能特点
 
-- Real-time stock data retrieval using yfinance
-- AI-powered stock analysis using DeepSeek
-- Historical analysis storage with Supabase
-- Modern, responsive UI built with Vue 3
+- 使用 ALPHA_VANTAGE 获取实时股票数据
+- 调用 DeepSeek 大模型进行智能分析
+- 将分析记录持久化存储到 Supabase
+- 基于 Vue 3 的现代化、响应式用户界面
 
-## Project Structure
+## 项目结构
+
 
 ```
 stock-analyzer/
@@ -38,16 +39,21 @@ stock-analyzer/
 
 ### Backend
 
+
+## 本地运行
+
+### 后端
+
 ```bash
 cd backend
 pip install -r requirements.txt
-```
 
 Configure environment variables in `backend/.env`:
 ```
 DEEPSEEK_API_KEY=your-deepseek-api-key
 SUPABASE_URL=your-supabase-url
 SUPABASE_KEY=your-supabase-key
+ALPHA_VANTAGE_API_KEY=your--key
 ```
 
 Run the backend:
@@ -81,18 +87,22 @@ CREATE TABLE stock_analyses (
 );
 ```
 
-## API Endpoints
+API 接口
+POST /analyze – 分析指定股票
 
-- `POST /analyze` - Analyze a stock symbol
-  - Request body: `{ "symbol": "AAPL" }`
-  - Returns: Stock data with AI analysis
+请求体：{ "symbol": "AAPL" }
 
-- `GET /health` - Health check endpoint
+返回：包含 AI 分析结果的股票数据
 
-## Tech Stack
+GET /health – 健康检查接口
 
-- **Backend**: FastAPI, Python
-- **Frontend**: Vue 3, Vite, Axios
-- **AI**: DeepSeek API
-- **Database**: Supabase
-- **Stock Data**: yfinance
+技术栈
+后端：FastAPI, Python
+
+前端：Vue 3, Vite, Axios
+
+AI 模型：DeepSeek API
+
+数据库：Supabase
+
+股票数据源：yfinance
