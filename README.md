@@ -2,6 +2,10 @@
 
 基于 FastAPI、Vue 3、DeepSeek AI 和 Supabase 构建的 AI 股票分析面板。
 
+
+- 前端页面：http://8.136.49.196:3000/
+- 后端 API 文档：http://8.136.49.196:8000/docs
+
 ## 功能特点
 
 - 使用 ALPHA_VANTAGE 获取实时股票数据
@@ -105,4 +109,9 @@ AI 模型：DeepSeek API
 
 数据库：Supabase
 
-股票数据源：yfinance
+股票数据源：ALPHA_VANTAGE
+
+
+
+
+
