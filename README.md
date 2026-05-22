@@ -21,12 +21,12 @@ stock-analyzer/
 ├── backend/
 │   ├── app/
 │   │   ├── __init__.py
-│   │   ├── main.py          # FastAPI entry point
-│   │   ├── config.py        # Environment configuration
-│   │   ├── models.py        # Pydantic models
-│   │   ├── stock.py         # Stock data fetching
-│   │   ├── analyzer.py      # DeepSeek AI integration
-│   │   └── supabase_client.py # Supabase storage
+│   │   ├── main.py         
+│   │   ├── config.py       
+│   │   ├── models.py        
+│   │   ├── stock.py        
+│   │   ├── analyzer.py      
+│   │   └── supabase_client.py 
 │   ├── requirements.txt
 │   └── .env
 ├── frontend/
