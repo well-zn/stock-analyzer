@@ -54,10 +54,12 @@ pip install -r requirements.txt
 
 Configure environment variables in `backend/.env`:
 ```
+```
 DEEPSEEK_API_KEY=your-deepseek-api-key
 SUPABASE_URL=your-supabase-url
 SUPABASE_KEY=your-supabase-key
 ALPHA_VANTAGE_API_KEY=your--key
+```
 ```
 
 Run the backend:
