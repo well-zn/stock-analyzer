@@ -114,6 +114,9 @@ AI 模型：DeepSeek API
 股票数据源：ALPHA_VANTAGE
 
 
+debug记录：
+<img width="877" height="1872" alt="image" src="https://github.com/user-attachments/assets/baa589a2-395f-4c46-9f10-2cc5e7eaff2f" />
+
 
 
 
